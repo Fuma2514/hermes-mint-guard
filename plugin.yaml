@@ -1,0 +1,12 @@
+name: bsc-mint-guard
+version: 1.0.0
+description: Safety-check a BSC ERC-721 free mint before you mint. Read-only on-chain reads, no keys, no signing, no spending.
+author: Fuma Ops II
+license: MIT
+requires_hermes: ">=0.21.5"
+provides_tools:
+  - mint_check
+  - mint_quote
+  - wallet_mint_status
+provides_hooks:
+  - post_tool_call
